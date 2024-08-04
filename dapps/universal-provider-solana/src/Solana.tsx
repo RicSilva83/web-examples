@@ -31,7 +31,7 @@ const provider = await UniversalProvider.init({
   },
 });
 
-const App = () => {
+const Solana = () => {
   const [isConnected, setIsConnected] = useState(false);
 
   // 5. get address once loaded
@@ -95,17 +95,17 @@ const App = () => {
             <b>Public Key: </b>
             {address}
           </p>
-          <div className="btn-container">
+          <div className="btn-container" style={{"background": "#ff9999"}}>
             <button onClick={handleSign}>Sign</button>
             <button onClick={handleSend}>Send</button>
             <button onClick={disconnect}>Disconnect</button>
           </div>
         </>
       ) : (
-        <button onClick={connect}>Connect</button>
+          <button onClick={connect}>Connect</button>
       )}
     </div>
   );
 };
 
-export default App;
+export default Solana;

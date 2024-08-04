@@ -23,7 +23,7 @@ yarn
 Set up your local environment variables by copying the example into your own `.env.local` file:
 
 ```bash
-cp .env.local.example .env.local
+cp .env.local .env.local
 ```
 
 Your `.env.local` now contains the following environment variables:
